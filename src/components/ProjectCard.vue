@@ -2,33 +2,48 @@
   <div id="main" v-bind:style="divStyle">
     <table id="content-table">
       <div class="center">
-      <td>
-        <img
-          v-bind:src="img"
-          v-bind:style="imgStyle"
-          id="main-img"
-          alt="main project image"
-        />
-      </td>
-      <td style="vertical-align: top">
-        <div id="text-div">
-          <slot />
-        </div>
-      </td>
+        <td>
+          <img
+            v-if="!video"
+            v-bind:src="img"
+            v-bind:style="imgStyle"
+            id="main-img"
+            alt="main project image"
+          />
+          <video id="main-img" v-else autoplay loop muted>
+            <source :src="video" type="video/mp4" />
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+        </td>
+        <td style="vertical-align: top">
+          <div id="text-div">
+            <slot />
+          </div>
+        </td>
       </div>
     </table>
     <div id="background-div">
       <img
+        v-if="!backgroundVideo"
         v-bind:src="backgroundImg"
         id="background-img"
         alt="project background image"
       />
+      <video id="background-img" v-else autoplay loop muted>
+        <source :src="video" type="video/mp4" />
+        Sorry, your browser doesn't support embedded videos.
+      </video>
     </div>
   </div>
 </template>
 <script>
 export default {
-  props: ["img", "background-img", "side"],
+  props: {
+    img: { type: String },
+    backgroundImg: { type: String },
+    video: { type: String },
+    backgroundVideo: { type: String },
+  },
   computed: {
     imgStyle() {
       return `float: ${this.side}`;
@@ -89,6 +104,6 @@ h1 {
 }
 a {
   font-size: min(3vh, 2vw);
-  color: grey
+  color: grey;
 }
 </style>

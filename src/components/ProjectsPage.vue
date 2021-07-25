@@ -3,9 +3,11 @@
     <div v-for="i in 5" :key="i">
     <ProjectCard
       :img="require('@/assets/' + 'tower-dropper/' + 'gameplay.gif' + '')"
+      :video="require('@/assets/' + 'tower-dropper/' + 'gameplay.mp4' + '')"
       :background-img="
         require('@/assets/' + 'tower-dropper/' + 'gameplay.gif' + '')
       "
+      :backgroundVideo="require('@/assets/' + 'tower-dropper/' + 'gameplay.mp4' + '')"
       ><h1>Tower Dropper</h1>
       <br />
       <p>
