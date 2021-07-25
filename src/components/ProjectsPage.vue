@@ -4,10 +4,6 @@
     <ProjectCard
       :img="require('@/assets/' + 'tower-dropper/' + 'screenshot.webp' + '')"
       :video="require('@/assets/' + 'tower-dropper/' + 'gameplay.mp4' + '')"
-      :background-img="
-        require('@/assets/' + 'tower-dropper/' + 'gameplay.gif' + '')
-      "
-      :backgroundVideo="require('@/assets/' + 'tower-dropper/' + 'gameplay.mp4' + '')"
       ><h1>Tower Dropper</h1>
       <br />
       <p>
@@ -19,7 +15,6 @@
     </ProjectCard>
     <ProjectCard
       :img="require('@/assets/' + 'jump/' + 'screenshot.png' + '')"
-      :background-img="require('@/assets/' + 'jump/' + 'background.png' + '')"
       ><h1>Jump</h1>
       <br />
       <p>

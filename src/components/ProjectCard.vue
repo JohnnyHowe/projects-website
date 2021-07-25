@@ -3,7 +3,7 @@
     <table id="content-table">
       <div class="center">
         <td>
-          <Animated v-bind:video="video" v-bind:image="img" id="main-img"/>
+          <Animated v-bind:video="video" v-bind:image="img" id="main-img" />
         </td>
         <td style="vertical-align: top">
           <div id="text-div">
@@ -13,17 +13,7 @@
       </div>
     </table>
     <div id="background-div">
-      <img
-        v-if="!backgroundVideo"
-        v-bind:src="backgroundImg"
-        id="background-img"
-        alt="project background image"
-      />
-      <video id="background-img" v-else autoplay loop muted>
-        <source :src="video" type="video/mp4" />
-        Sorry, your browser doesn't support embedded videos.
-      </video> -->
-          <Animated v-bind:video="video" v-bind:image="img" id="background-img"/>
+      <Animated v-bind:video="video" v-bind:image="img" id="background-img" />
     </div>
   </div>
 </template>
@@ -89,6 +79,7 @@ td {
 }
 #main-img {
   height: min(80vh, 40vw);
+  width: min((9/16) * 80vh, (9/16) * 40vw);
 }
 
 p {

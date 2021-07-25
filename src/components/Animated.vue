@@ -1,10 +1,10 @@
 <template>
   <div>
-    <video v-if="video" class="main" autoplay loop muted>
+    <video v-if="video" class="content" autoplay loop muted>
       <source :src="video" type="video/mp4" />
-      <img class="main" v-bind:src="image" alt="main project image" />
+      <img class="content" v-bind:src="image" alt="main project image" />
     </video>
-    <img v-else class="main" v-bind:src="image" alt="main project image" />
+    <img v-else class="content" v-bind:src="image" alt="main project image" />
   </div>
 </template>
 <script>
@@ -19,10 +19,9 @@ export default {
 };
 </script>
 <style scoped>
-* {
-  /* border: 2px solid red; */
-}
-.main {
+.content {
+  width: 100%;
   height: 100%;
+  object-fit: inherit;
 }
 </style>
