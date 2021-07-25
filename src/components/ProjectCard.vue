@@ -3,17 +3,7 @@
     <table id="content-table">
       <div class="center">
         <td>
-          <img
-            v-if="!video"
-            v-bind:src="img"
-            v-bind:style="imgStyle"
-            id="main-img"
-            alt="main project image"
-          />
-          <video id="main-img" v-else autoplay loop muted>
-            <source :src="video" type="video/mp4" />
-            Sorry, your browser doesn't support embedded videos.
-          </video>
+          <Animated v-bind:video="video" v-bind:image="img" id="main-img"/>
         </td>
         <td style="vertical-align: top">
           <div id="text-div">
@@ -32,12 +22,17 @@
       <video id="background-img" v-else autoplay loop muted>
         <source :src="video" type="video/mp4" />
         Sorry, your browser doesn't support embedded videos.
-      </video>
+      </video> -->
+          <Animated v-bind:video="video" v-bind:image="img" id="background-img"/>
     </div>
   </div>
 </template>
 <script>
+import Animated from "./Animated.vue";
 export default {
+  components: {
+    Animated,
+  },
   props: {
     img: { type: String },
     backgroundImg: { type: String },

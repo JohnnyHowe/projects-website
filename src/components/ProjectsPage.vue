@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div v-for="i in 5" :key="i">
+    <div v-for="i in 1" :key="i">
     <ProjectCard
-      :img="require('@/assets/' + 'tower-dropper/' + 'gameplay.gif' + '')"
+      :img="require('@/assets/' + 'tower-dropper/' + 'screenshot.webp' + '')"
       :video="require('@/assets/' + 'tower-dropper/' + 'gameplay.mp4' + '')"
       :background-img="
         require('@/assets/' + 'tower-dropper/' + 'gameplay.gif' + '')
