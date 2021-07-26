@@ -21,7 +21,9 @@
           src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
       /></a>
     </ProjectCard>
-    <ProjectCard :img="require('@/assets/jump/screenshot.png')"
+    <ProjectCard
+      :img="require('@/assets/jump/screenshot.png')"
+      :video="require('@/assets/jump/gameplay.mp4')"
       ><h1>Jump</h1>
       <br />
       <p>

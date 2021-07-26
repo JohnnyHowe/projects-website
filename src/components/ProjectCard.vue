@@ -73,7 +73,7 @@ td {
   left: 0px;
   top: 0px;
   width: 100%;
-  filter: brightness(30%);
+  filter: brightness(10%);
   object-fit: cover;
   height: min(80vh + 50px, 40vw + 50px);
 }
