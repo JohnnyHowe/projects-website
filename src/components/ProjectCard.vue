@@ -80,6 +80,7 @@ td {
 #main-img {
   height: min(80vh, 40vw);
   width: min((9/16) * 80vh, (9/16) * 40vw);
+  object-fit: cover;
 }
 
 p {
