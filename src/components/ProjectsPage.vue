@@ -73,7 +73,7 @@
         Watch out, if you eat your own tail, it's game over.
         <br />
         <br />
-        Created with JavaScript and the HTML5 Canvas
+        Created with JavaScript and the HTML5 Canvas (2019)
       </p>
       <br />
       <a href="https://github.com/JohnnyHowe/snake-js" target="_blank"
