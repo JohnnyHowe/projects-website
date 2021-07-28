@@ -52,7 +52,7 @@
         Simple raytracer able to recursivley trace through solid, transparent,
         refractive, and reflective objects to produce a more realistic scene
         than the OpenGL2 pipeline allows. <br /><br />
-        Created in C++ with OpenGL (2020)
+        Created in C++ with OpenGL (2021)
       </p>
       <br />
       <a href="https://github.com/JohnnyHowe/opengl-raytracer" target="_blank"
