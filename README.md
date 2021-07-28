@@ -9,3 +9,7 @@
 ```npm run build```
 
 Rename "dist" to "docs"
+
+Merge current branch into "main" branch
+
+Push
