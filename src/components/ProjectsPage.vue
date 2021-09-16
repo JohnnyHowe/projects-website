@@ -1,5 +1,27 @@
 <template>
   <div>
+    <ProjectCard :video="require('@/assets/drifto-gameplay.mp4')"
+      ><h1>Drifto</h1>
+      <br />
+      <p>
+        A mobile drifting game.<br />
+        The rush of a full scale racing game in the accessible form of a mobile game.
+        <br /><br />
+        No overcomplicated on screen controls.<br />
+        Just you, the car, the road, and a whole lot of tyre smoke.
+        <br /><br />
+        This is a work in progress, this sneak peak is not final.
+        Developed in Unity (2021 - Now)
+      </p>
+      <br />
+      <a href="https://github.com/JohnnyHowe/drifto" target="_blank"
+        ><img
+          class="github"
+          alt="Check it out on GitHub"
+          src="@/assets/github-icon.png"
+      /></a>
+    </ProjectCard>
+
     <ProjectCard
       :img="require('@/assets/tower-dropper-screenshot.webp')"
       :video="require('@/assets/tower-dropper-gameplay.mp4')"
@@ -92,7 +114,7 @@
       ><h1>OpenGL Animation</h1>
       <br />
       <p>
-        Simple physics based animation.<br/>
+        Simple physics based animation.<br />
         Shows scene containing basic shapes and a sweep surface.
         <br />
         <br />
