@@ -10,7 +10,7 @@
         No overcomplicated on screen controls.<br />
         Just you, the car, the road, and a whole lot of tyre smoke.
         <br /><br />
-        This is a work in progress, this sneak peak is not final.
+        This is a work in progress, this sneak peak is not final.<br/>
         Developed in Unity (2021 - Now)
       </p>
       <br />
