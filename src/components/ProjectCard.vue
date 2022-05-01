@@ -1,5 +1,5 @@
 <template>
-  <div id="main">
+  <div id="main" v-bind:style="divStyle">
     <table id="content-table">
       <div class="center">
         <td>
@@ -28,6 +28,14 @@ export default {
     backgroundImg: { type: String },
     video: { type: String },
     backgroundVideo: { type: String },
+  },
+  computed: {
+    imgStyle() {
+      return `float: ${this.side}`;
+    },
+    divStyle() {
+      return `text-align: ${this.side}`;
+    },
   },
 };
 </script>

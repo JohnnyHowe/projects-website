@@ -1,18 +1,6 @@
-<script setup>
-import githubIconURL from "@/assets/github-icon.png"
-import playButtonIconURL from "@/assets/play-button.png"
-
-import driftoVideoURL from "@/assets/drifto-gameplay.mp4";
-import towerDropperVideoURL from "@/assets/tower-dropper-gameplay.mp4"
-import jumpVideoURL from "@/assets/jump-gameplay.mp4"
-import pongVideoURL from "@/assets/pong-gameplay.mp4"
-import raytracterURL from "@/assets/raytracer.png"
-import openGLVideoURL from "@/assets/opengl-animation.mp4"
-import snakeVideoURL from "@/assets/snake-gameplay.mp4"
-</script>
 <template>
   <div>
-    <ProjectCard :video="driftoVideoURL"
+    <ProjectCard :video="require('@/assets/drifto-gameplay.mp4')"
       ><h1>Drifto</h1>
       <br />
       <p>
@@ -22,21 +10,21 @@ import snakeVideoURL from "@/assets/snake-gameplay.mp4"
         No overcomplicated on screen controls.<br />
         Just you, the car, the road, and a whole lot of tyre smoke.
         <br /><br />
+        This is a work in progress, this sneak peak is not final.<br/>
         Developed in Unity (2021 - Now)
       </p>
       <br />
-      <a
-        href="https://play.google.com/store/apps/details?id=com.UnluckyDuck.Drifto"
-        target="_blank"
+      <a href="https://github.com/JohnnyHowe/drifto" target="_blank"
         ><img
-          class="google-play"
-          alt="Get it on Google Play"
-          src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+          class="github"
+          alt="Check it out on GitHub"
+          src="@/assets/github-icon.png"
       /></a>
-
     </ProjectCard>
+
     <ProjectCard
-      :video="towerDropperVideoURL"
+      :img="require('@/assets/tower-dropper-screenshot.webp')"
+      :video="require('@/assets/tower-dropper-gameplay.mp4')"
       ><h1>Tower Dropper</h1>
       <br />
       <p>
@@ -58,7 +46,8 @@ import snakeVideoURL from "@/assets/snake-gameplay.mp4"
       /></a>
     </ProjectCard>
     <ProjectCard
-      :video="jumpVideoURL"
+      :img="require('@/assets/jump-screenshot.png')"
+      :video="require('@/assets/jump-gameplay.mp4')"
       ><h1>Jump</h1>
       <br />
       <p>
@@ -79,7 +68,8 @@ import snakeVideoURL from "@/assets/snake-gameplay.mp4"
       /></a>
     </ProjectCard>
     <ProjectCard
-      :video="pongVideoURL"
+      :img="require('@/assets/pong-screenshot.png')"
+      :video="require('@/assets/pong-gameplay.mp4')"
       ><h1>Pong</h1>
       <br />
       <p>
@@ -98,10 +88,10 @@ import snakeVideoURL from "@/assets/snake-gameplay.mp4"
         ><img
           class="github"
           alt="Check it out on GitHub"
-          :src="githubIconURL"
+          src="@/assets/github-icon.png"
       /></a>
     </ProjectCard>
-    <ProjectCard :img="raytracterURL"
+    <ProjectCard :img="require('@/assets/raytracer.png')"
       ><h1>OpenGL Raytracer</h1>
       <br />
       <p>
@@ -115,11 +105,12 @@ import snakeVideoURL from "@/assets/snake-gameplay.mp4"
         ><img
           class="github"
           alt="Check it out on GitHub"
-          :src="githubIconURL"
+          src="@/assets/github-icon.png"
       /></a>
     </ProjectCard>
     <ProjectCard
-      :video="openGLVideoURL"
+      :img="require('@/assets/opengl-animation-screenshot.png')"
+      :video="require('@/assets/opengl-animation.mp4')"
       ><h1>OpenGL Animation</h1>
       <br />
       <p>
@@ -134,11 +125,12 @@ import snakeVideoURL from "@/assets/snake-gameplay.mp4"
         ><img
           class="github"
           alt="Check it out on GitHub"
-          :src="githubIconURL"
+          src="@/assets/github-icon.png"
       /></a>
     </ProjectCard>
     <ProjectCard
-      :video="snakeVideoURL"
+      :img="require('@/assets/snake-screenshot.png')"
+      :video="require('@/assets/snake-gameplay.mp4')"
       ><h1>Snake</h1>
       <br />
       <p>
@@ -154,7 +146,7 @@ import snakeVideoURL from "@/assets/snake-gameplay.mp4"
         ><img
           class="github"
           alt="Check it out on GitHub"
-          :src="githubIconURL"
+          src="@/assets/github-icon.png"
       /></a>
       <a href="https://johnnyhowe.github.io/snake-js/" target="_blank"
         ><img class="github" alt="Play it now" src="@/assets/play-button.png"
