@@ -1,4 +1,0 @@
-run "npm run build"
-delete "docs"
-rename "dist" to "docs"
-commit and push
